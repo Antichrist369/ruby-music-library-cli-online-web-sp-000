@@ -39,4 +39,10 @@ class MusicLibraryController
             end 
         end 
    end 
+   
+   def list_songs 
+     Song.all.sort{|a, b| a.name <=> b.name}.each_with_indwx do |s, i|
+       puts "#{i+1}. #{s.artist.name} - #{s.name} - #{s.genre.name}"
+     end 
+   end 
 end 
