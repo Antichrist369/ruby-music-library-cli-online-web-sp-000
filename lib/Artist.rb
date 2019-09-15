@@ -2,7 +2,7 @@ require 'pry'
  
 class Artist 
   attr_accessor :name, :song, :musicimporter, :musiclibrarycontroller
-  
+  extend Concerns::Findable
   @@all = []
   
   def initialize(name) 
