@@ -1,5 +1,5 @@
 require 'pry' 
-
+extend 
 class Genre 
   attr_accessor :name, :musicimporter, :musiclibrarycontroller
   
