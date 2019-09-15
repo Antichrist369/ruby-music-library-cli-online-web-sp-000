@@ -1,8 +1,8 @@
 require 'pry' 
-extend Concerns::Findable 
+ 
 class Genre 
   attr_accessor :name, :musicimporter, :musiclibrarycontroller
-  
+  extend Concerns::Findable
   @@all = []
   
   def initialize(name) 
