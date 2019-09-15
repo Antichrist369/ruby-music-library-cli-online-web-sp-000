@@ -1,5 +1,5 @@
 require 'pry' 
-extend 
+extend Concerns::Findable 
 class Genre 
   attr_accessor :name, :musicimporter, :musiclibrarycontroller
   
